@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://www.vml.com/favicon.svg?v=2024" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="container">
+
+    <!-- Image + Header -->
+    <div class="header-container">
+      <img src="https://cdn.brandfetch.io/idtxRwNpFr/w/400/h/400/theme/dark/icon.jpeg?k=bfHSJFAPEG.jpeg" alt="VML" class="image">
+      <h1>User List</h1>
+    </div>
+
+    
+    <div class="controls">
+        <!-- Filter -->
+        <input type="text" id="searchBox" placeholder="Search by name, username, or email...">
+        
+        <!-- Sort-->
+        <select id="sortOptions">
+            <option value="name">Sort by name</option>
+            <option value="username">Sort by username</option>
+            <option value="email">Sort by email</option>
+        </select>
+    </div>
+
+    <!-- Show Users -->
+    <ul id="userList"></ul>
+    
+  </div>
+
+  <!-- scripts -->
+  <script src="apicall.js"></script>
+  <script src="showUsers.js"></script>
+  <script src="sort.js"></script>
+  <script src="filter.js"></script>
+
+</body>
+</html>

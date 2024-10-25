@@ -1,0 +1,82 @@
+
+body  {
+    font-family: Helvetica;
+    line-height: 1.5;
+    font-weight: 400;
+    
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424; 
+}
+
+
+/*main div*/
+div{
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.header-container{
+    display: flex;
+    height: 56px;
+    padding: 24px;
+}
+.image{
+    width: 56px;
+    height: 56px;
+    align-self: center;
+}
+h1 {
+    color: white;
+    align-self: center;
+    padding-left: 12px;
+    font-size: 48px;
+    padding: none;
+    margin-bottom: none;
+}
+
+
+.controls{
+    display:flex;
+}
+/*styles for the input section*/
+#searchBox {
+border: #f0f0f0;
+background-color: #1a1a1a;
+padding: 10px;
+width: 100%;
+}
+#sortOptions {
+padding: 8px;
+font-size: small;
+width: 20%;
+}
+
+/*Styles for each user list*/
+h3 {
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+
+li {
+list-style-type: none;
+background-color: #ffffff11;
+margin: 24px 0;
+padding: 32px;
+padding-left: 48px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+}
+
+
+/* responsive */
+@media (min-width: 600px) {
+.controls {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+}
+  
